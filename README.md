@@ -1,5 +1,32 @@
 # React + TypeScript + Vite
 
+## Deploy to GitHub Pages
+
+This project is configured to publish the `dist` folder to GitHub Pages.
+
+1. Push this project to a GitHub repository named `vite-react-didactica`.
+2. Install dependencies:
+
+  ```bash
+  npm install
+  ```
+
+3. Publish:
+
+  ```bash
+  npm run deploy
+  ```
+
+4. In GitHub, open **Settings → Pages** and set:
+  - **Source**: `Deploy from a branch`
+  - **Branch**: `gh-pages` (root)
+
+Your site URL will be similar to:
+
+`https://<your-username>.github.io/vite-react-didactica/`
+
+If your repository name is different, update `base` in `vite.config.ts` to match that repository name.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
